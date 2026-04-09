@@ -1,0 +1,18 @@
+package com.calvinnexus.content.model.dto;
+
+import com.calvinnexus.content.model.po.CourseCategory;
+import lombok.Data;
+
+import java.util.List;
+
+/**
+ * @version 1.0
+ * @description TODO
+ */
+@Data
+public class CourseCategoryTreeDto extends CourseCategory implements java.io.Serializable {
+
+    //子节点
+    List<CourseCategoryTreeDto> childrenTreeNodes;
+
+}
